@@ -5,6 +5,7 @@
             text: 'Start'
         Button:
             text: 'Lista Zajęć'
+            on_press: root.manager.current = 'task_list'
         Button:
             text: 'Obrazki'
         Button:
@@ -13,3 +14,14 @@
             text: 'O Programie'
         Button:
             text: 'Wyjście'
+
+
+<TaskListScreen>:
+    TaskListView:
+        orientation: 'vertical'
+        Button:
+            text: 'to be - zdania twierdzące'
+        Button:
+            text: 'to be - zdania przeczące'
+        Button:
+            text: 'to be - zdania pytające'
