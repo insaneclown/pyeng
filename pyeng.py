@@ -1,9 +1,8 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager
 
-from gui.screens import *
-from gui.views import *
-
+from core.gui.screens import *
+from core.gui.views import *
 
 class PyEngApp(App):
     def build(self):
