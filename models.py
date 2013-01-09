@@ -1,6 +1,8 @@
 import peewee
 
-database = peewee.SqliteDatabase('pyeng.db')
+from settings import DATABASE_NAME
+
+database = peewee.SqliteDatabase(DATABASE_NAME)
 
 
 class BaseModel(peewee.Model):
