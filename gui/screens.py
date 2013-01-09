@@ -6,3 +6,7 @@ class MenuScreen(Screen):
 
 class TaskListScreen(Screen):
     pass
+
+
+class UserListScreen(Screen):
+    pass

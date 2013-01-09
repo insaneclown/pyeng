@@ -3,6 +3,7 @@
         orientation: 'vertical'
         Button:
             text: 'Start'
+            on_press: root.manager.current = 'user_list'
         Button:
             text: 'Lista Zajęć'
             on_press: root.manager.current = 'task_list'
@@ -25,3 +26,14 @@
             text: 'to be - zdania przeczące'
         Button:
             text: 'to be - zdania pytające'
+
+
+<UserListScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: 'Jan'
+        Button:
+            text: 'Filip'
+        Button:
+            text: 'Dodaj Ucznia'
