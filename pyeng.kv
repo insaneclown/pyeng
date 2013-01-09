@@ -13,6 +13,7 @@
             text: 'Ustawienia'
         Button:
             text: 'O Programie'
+            on_press: root.foo()
         Button:
             text: 'Wyjście'
 
@@ -26,6 +27,9 @@
             text: 'to be - zdania przeczące'
         Button:
             text: 'to be - zdania pytające'
+        Button:
+            text: 'Powrót'
+            on_press: root.manager.current = 'menu'
 
 
 <UserListScreen>:
@@ -37,3 +41,18 @@
             text: 'Filip'
         Button:
             text: 'Dodaj Ucznia'
+            on_press: root.manager.current = 'add_user'
+        Button:
+            text: 'Powrót'
+            on_press: root.manager.current = 'menu'
+
+
+<AddUserScreen>
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Podaj nazwę ucznia:'
+        TextInput:
+        Button:
+            text: 'Powrót'
+            on_press: root.manager.current = 'user_list'

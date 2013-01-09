@@ -1,5 +1,6 @@
 from kivy.uix.screenmanager import Screen
 
+
 class MenuScreen(Screen):
     pass
 
@@ -9,4 +10,8 @@ class TaskListScreen(Screen):
 
 
 class UserListScreen(Screen):
+    pass
+
+
+class AddUserScreen(Screen):
     pass
