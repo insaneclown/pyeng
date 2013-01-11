@@ -15,3 +15,5 @@ def is_package(dir):
         True if it's a package, otherwise False.
     """
     return path.isdir(dir) and path.isfile(path.join(dir, '__init__.py'))
+
+

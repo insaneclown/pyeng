@@ -4,6 +4,9 @@ from kivy.uix.screenmanager import ScreenManager
 from core.gui.screens import *
 from core.gui.views import *
 
+from core.db import sync_db
+
+
 class PyEngApp(App):
     def build(self):
         screen_manager = ScreenManager()
@@ -13,4 +16,5 @@ class PyEngApp(App):
         screen_manager.add_widget(AddUserScreen(name='add_user'))
         return screen_manager
 
-PyEngApp().run()
+#PyEngApp().run()
+sync_db()
