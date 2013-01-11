@@ -4,7 +4,7 @@ from kivy.uix.screenmanager import ScreenManager
 from core.gui.screens import *
 from core.gui.views import *
 
-from core.db import sync_db
+from core.db import sync_database
 
 
 class PyEngApp(App):
@@ -17,4 +17,4 @@ class PyEngApp(App):
         return screen_manager
 
 #PyEngApp().run()
-sync_db()
+sync_database()
